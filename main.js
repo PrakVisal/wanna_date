@@ -3,6 +3,8 @@ const imageOne = document.querySelector(".image-1");
 const imageTwe = document.querySelector(".image-2");
 const btnYes = document.querySelector(".btn-yes");
 const btnNo = document.querySelector(".btn-no");
+const title1 = document.querySelector(".title");
+const title2 = document.querySelector('.title-2');
 
 function getRandomNumber(min, max) {
     const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -34,4 +36,7 @@ btnYes.addEventListener("click", (e) => {
     btnNo.classList.add("hide");
     imageOne.classList.add("hide");
     imageTwe.classList.remove("hide");
+    title1.innerHTML=('I Love');
+    title2.innerHTML=('You');
+
 })
