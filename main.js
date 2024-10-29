@@ -10,7 +10,7 @@ function getRandomNumber(min, max) {
     const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
     return randomNumber;
 }
-btnNo.addEventListener("mouseover", (e) => {
+btnNo.addEventListener("click", (e) => {
     const containerHeight = container.getBoundingClientRect().height;
     const containerWidth = container.getBoundingClientRect().width;
     const btnHeight = btnNo.getBoundingClientRect().height;
@@ -34,6 +34,7 @@ btnNo.addEventListener("mouseover", (e) => {
 
 btnYes.addEventListener("click", (e) => {
     btnNo.classList.add("hide");
+    btnYes.classList.add('hide');
     imageOne.classList.add("hide");
     imageTwe.classList.remove("hide");
     title1.innerHTML=('I Love');
